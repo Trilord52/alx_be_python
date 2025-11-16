@@ -1,15 +1,13 @@
 size = input("Enter the size of the pattern: ")
-try:
-    size = int(size)
-    if size <= 0:
-        print("Please enter a positive integer!")
-        exit()
-except ValueError:
-    print("Invalid input! Enter a positive integer.")
-    exit()
+while not size.isdigit() or int(size) <= 0:
+    size = input("Invalid input! Enter a positive integer: ")
+
+size = int(size)
+
 row = 0
+
 while row < size:
     for col in range(size):
         print("*", end="")
-    print() 
+    print()  
     row += 1
