@@ -1,6 +1,3 @@
-number = input("Enter a number to see its multiplication table: ")
-while not number.lstrip('-').isdigit():
-    number = input("Invalid input! Please enter a valid number: ")
-num = int(number)
+number = int(input("Enter a number to see its multiplication table: "))
 for i in range(1, 11):
-    print(f"{num} * {i} = {num * i}")
+    print(f"{number} * {i} = {number * i}")
